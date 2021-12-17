@@ -1,6 +1,12 @@
 {
   "compilerOptions": {
     "target": "es2016",
+    "baseUrl": "src",
+    "paths": {
+      "@/components/*": ["components/*"],
+      "@/styles/*": ["styles/*"],
+      "@/public/*": ["../public/*"],
+    },
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
