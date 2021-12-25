@@ -32,3 +32,19 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## ディレクトリ構成についての説明
+```
+<project-root>
+├ src
+│ ├── components
+│ │   ├── layout // レイアウトに関するもの
+│ │   ├── model // userやpostなど特定のモデルに関するもの
+│ │   ├── page // ページコンポーネントそのままのもの(pagesの方でこの中のものをimportする)
+│ │   └── ui // 特定のモデルに依存しない共通のui
+│ ├── hooks // hooksをまとめる
+│ ├── pages // Next.jsからページとして認識される場所(必須)
+│ └── utils // 共通関数などをまとめる
+├ test // testをまとめる
+├ public // 画像などの静的ファイルを入れる
+```
